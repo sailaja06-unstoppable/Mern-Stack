@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="num">
+<button onclick="calc()">Calculate</button>
+
+<p id="output"></p>
+
+<script>
+function factorial(n){
+    let f = 1;
+    for(let i=1;i<=n;i++) f *= i;
+    return f;
+}
+
+function fibonacci(n){
+    let a=0,b=1,res="0 1 ";
+    for(let i=2;i<n;i++){
+        let t=a+b;
+        res+=t+" ";
+        a=b; b=t;
+    }
+    return res;
+}
+
+function calc(){
+    let n = document.getElementById("num").value;
+    document.getElementById("output").innerHTML =
+        "Factorial: " + factorial(n) + "<br>" +
+        "Fibonacci: " + fibonacci(n);
+}
+</script>
+
+</body>
+</html>
