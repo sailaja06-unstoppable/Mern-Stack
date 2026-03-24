@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let a = parseInt(prompt("Enter a"));
+let b = parseInt(prompt("Enter b"));
+let c = parseInt(prompt("Enter c"));
+
+if (a > b && a > c)
+    alert(a + " is largest");
+else if (b > c)
+    alert(b + " is largest");
+else
+    alert(c + " is largest");
+</script>
+
+</body>
+</html>
